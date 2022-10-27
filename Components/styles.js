@@ -57,6 +57,9 @@ overflow:auto;
         .marquee_text_res{
             font-size:24px !important;
         }
+        .res_center_content{
+            text-align: center !important;
+        }
 
       }
 `;
@@ -82,6 +85,7 @@ export const A = styles.a``;
 export const Button = styles.button``;
 export const Span = styles.span``;
 export const Ul = styles.ul``;
+export const Input = styles.input``;
 export const Li = styles.li`
 .active{
     color:#49ffa4 !important;
