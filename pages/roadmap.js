@@ -1,5 +1,4 @@
 import Navbar from "../Components/Navbar";
-import Head from "next/Head";
 import { useState, useEffect } from "react";
 const roadmap = () => {
   const [mount, setMount] = useState(false);
