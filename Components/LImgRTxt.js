@@ -1,6 +1,6 @@
 import { H1, H2, H3, H4, P } from "./Typography";
 import { Wrapper, HomeStyle } from "../Components/styles";
-import Image from "next/Image";
+import Image from "next/image";
 const LImgRTxt = (props) => {
   return (
     <>

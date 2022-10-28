@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Script from "next/Script";
+import Script from "next/script";
 import { Global } from "../Components/styles";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function MyApp({ Component, pageProps }) {

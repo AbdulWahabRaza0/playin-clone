@@ -2,7 +2,6 @@ import Navbar from "../Components/Navbar";
 import { useState, useEffect } from "react";
 import { WorthStyle, Wrapper } from "../Components/styles";
 import { H1, H2, H3, H4, POrg, HR } from "../Components/Typography";
-import Image from "next/Image";
 const worth = () => {
   const [mount, setMount] = useState(false);
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/Image";
-import Head from "next/Head";
+import Image from "next/image";
+import Head from "next/head";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { Wrapper, Nav, A, Button, Span, Ul, Li } from "../Components/styles";

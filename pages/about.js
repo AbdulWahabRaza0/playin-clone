@@ -1,6 +1,5 @@
 import Navbar from "../Components/Navbar";
 import { useState, useEffect } from "react";
-import Head from "next/Head";
 const about = () => {
   const [mount, setMount] = useState(false);
 

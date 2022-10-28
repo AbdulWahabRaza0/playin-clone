@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Typed from "react-typed";
