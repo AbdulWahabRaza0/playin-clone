@@ -9,7 +9,7 @@ font-size:56px !important;
 color:white !important;
 `;
 export const H3 = styles.h3`
-font-size:45px !important;
+font-size:${(props) => props.size || "45px"};
 color:white !important;
 `;
 export const H4 = styles.h4`
