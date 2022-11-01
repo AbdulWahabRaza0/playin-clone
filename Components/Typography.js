@@ -18,6 +18,8 @@ font-weight:350 !important;
 `;
 export const H3Box = styles.h3`
 color:${(props) => props.color || "white"};
+font-size:${(props) => props.size || "25px"};
+font-weight:${(props) => props.weight || "300"};
 `;
 export const P = styles.p`
   font-size:24px !important;

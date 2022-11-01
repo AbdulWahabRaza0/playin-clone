@@ -395,13 +395,18 @@ const index = () => {
                       <Wrapper className="container container-fluid">
                         <Wrapper
                           className="row"
-                          style={{ backgroundColor: "#49ffa4" }}
+                          style={{
+                            backgroundColor: `${
+                              show && showId === index ? "#49ffa4" : "black"
+                            }`,
+                            // backgroundColor: "black",
+                          }}
                         >
-                          <Wrapper className="col-md-12 mt-3 mb-3">
+                          <Wrapper className="col-md-12 mt-4 mb-3">
                             <Wrapper className="d-flex">
                               <Wrapper className="col-md-10">
                                 <H3Box
-                                  color="black"
+                                  color="white"
                                   style={{
                                     float: "left",
                                   }}
@@ -423,21 +428,21 @@ const index = () => {
                                   >
                                     -
                                   </H3>
-                                ) : show === false ? (
+                                ) : (
                                   <H3
                                     style={{
                                       float: "right",
                                       cursor: "pointer",
                                     }}
                                     onClick={() => {
-                                      setShow(!show);
+                                      if (!show) {
+                                        setShow(true);
+                                      }
                                       setShowId(index);
                                     }}
                                   >
                                     +
                                   </H3>
-                                ) : (
-                                  ""
                                 )}
                               </Wrapper>
                             </Wrapper>

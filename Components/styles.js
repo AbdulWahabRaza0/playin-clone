@@ -16,6 +16,9 @@ overflow:auto;
 .display_para_res{
     display:none;
 }
+.home_res_pad_top{
+margin-top:-200px !important;
+}
 .display_para_desk{
     display:block;
 }
@@ -40,7 +43,7 @@ overflow:auto;
         .home_res_pad_top{
             margin-left:60px !important;
             margin-right:60px !important;
-            padding-top:20% !important;
+            margin-top:120px !important;
         }
         .home_res_pad_bottom{
             margin-top:20px !important;
@@ -88,6 +91,9 @@ width:100%;
 margin:auto; 
 height:100%; 
 overflow:auto;
+.worth_box5_res{
+    margin-left:-70px;
+}
 @media screen and (max-width: 768px) {
 
     .display_para_res{
@@ -114,6 +120,9 @@ overflow:auto;
         width:100px !important;
         transform: scale(1.5) !important;
         position: relative !important;
+    }
+    .worth_box5_res{
+        margin-left:0px !important;
     }
     .worth_h1_res_size{
         font-size:36px !important;

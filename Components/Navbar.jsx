@@ -128,9 +128,10 @@ const Navbar = (props) => {
             {show ? (
               ""
             ) : (
-              <form className="form-inline my-2 my-lg-0">
+              <form className="form-inline my-2 my-lg-0 mr-4">
                 <button
-                  className="btn btn-outline-success my-2 my-sm-0 mr-5"
+                  className="btn btn-success"
+                  style={{ transform: "translate3d(0px, 0px, 0px)" }}
                   type="submit"
                 >
                   Get Started
