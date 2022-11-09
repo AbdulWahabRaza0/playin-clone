@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Script from "next/script";
-import { Global } from "../Components/styles";
+import "../styles/globals.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
-      {" "}
       <Script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"

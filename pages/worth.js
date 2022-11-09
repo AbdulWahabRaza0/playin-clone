@@ -1,7 +1,7 @@
 import Navbar from "../Components/Navbar";
 import { useState, useEffect } from "react";
 import { WorthStyle, Wrapper } from "../Components/styles";
-import { H1, H2, H3, H3Box, H4, POrg, HR } from "../Components/Typography";
+import { H1, H3, HR, P } from "../Components/Typography";
 import Image from "next/image";
 const worth = () => {
   const [mount, setMount] = useState(false);
@@ -16,7 +16,7 @@ const worth = () => {
         <Wrapper className="container container-fluid">
           <Wrapper className="row" style={{ marginTop: "100px" }}>
             <Wrapper className="ml-4 col-md-5">
-              <H1 className="worth_h1_res_size">
+              <H1>
                 OUR
                 <br />
                 WORTH
@@ -24,17 +24,14 @@ const worth = () => {
             </Wrapper>
             <Wrapper className="col-md-1"></Wrapper>
             <Wrapper className="col-md-5 ml-4">
-              <POrg
-                color="white"
-                style={{ fontWeight: "360", fontSize: "20px" }}
-              >
+              <P size="20px" color="white" weight="100">
                 We are guided by a shared vision:
                 <br />
                 <br />
                 to revolutionize fandom, champion global communities and embrace
                 greatness one play at a time, through seamless adoption of
                 decentralized technology.
-              </POrg>
+              </P>
             </Wrapper>
           </Wrapper>
           <HR color="#49ffa4" />
@@ -73,10 +70,14 @@ const worth = () => {
                     marginBottom: "auto",
                   }}
                 />
-                <H1 className="ml-3" style={{ position: "absolute", top: "0" }}>
+                <H3
+                  size="75px"
+                  className="ml-3"
+                  style={{ position: "absolute", top: "0" }}
+                >
                   01
-                </H1>
-                <H3Box
+                </H3>
+                <H3
                   size="30px"
                   weight="600"
                   className="ml-3 mb-4"
@@ -86,7 +87,7 @@ const worth = () => {
                   }}
                 >
                   VISION AND CONTROL
-                </H3Box>
+                </H3>
               </Wrapper>
             </Wrapper>
             {/* 2nd Box  */}
@@ -114,10 +115,14 @@ const worth = () => {
                     marginBottom: "auto",
                   }}
                 />
-                <H1 className="ml-3" style={{ position: "absolute", top: "0" }}>
+                <H3
+                  size="75px"
+                  className="ml-3"
+                  style={{ position: "absolute", top: "0" }}
+                >
                   02
-                </H1>
-                <H3Box
+                </H3>
+                <H3
                   size="30px"
                   weight="600"
                   className="ml-3 mb-4"
@@ -127,7 +132,7 @@ const worth = () => {
                   }}
                 >
                   COMMUNITY
-                </H3Box>
+                </H3>
               </Wrapper>
             </Wrapper>
 
@@ -161,10 +166,14 @@ const worth = () => {
                     marginBottom: "auto",
                   }}
                 />
-                <H1 className="ml-3" style={{ position: "absolute", top: "0" }}>
+                <H3
+                  size="75px"
+                  className="ml-3"
+                  style={{ position: "absolute", top: "0" }}
+                >
                   03
-                </H1>
-                <H3Box
+                </H3>
+                <H3
                   size="30px"
                   weight="600"
                   className="ml-3 mb-4"
@@ -174,7 +183,7 @@ const worth = () => {
                   }}
                 >
                   GAMIFIED EXPERIENCE
-                </H3Box>
+                </H3>
               </Wrapper>
             </Wrapper>
 
@@ -208,10 +217,14 @@ const worth = () => {
                     marginRight: "auto",
                   }}
                 />
-                <H1 className="ml-3" style={{ position: "absolute", top: "0" }}>
+                <H3
+                  size="75px"
+                  className="ml-3"
+                  style={{ position: "absolute", top: "0" }}
+                >
                   04
-                </H1>
-                <H3Box
+                </H3>
+                <H3
                   size="30px"
                   weight="600"
                   className="ml-3 mb-4"
@@ -221,7 +234,7 @@ const worth = () => {
                   }}
                 >
                   BEYOND GAMING
-                </H3Box>
+                </H3>
               </Wrapper>
             </Wrapper>
 
@@ -250,10 +263,14 @@ const worth = () => {
                     marginBottom: "auto",
                   }}
                 />
-                <H1 className="ml-3" style={{ position: "absolute", top: "0" }}>
+                <H3
+                  size="75px"
+                  className="ml-3"
+                  style={{ position: "absolute", top: "0" }}
+                >
                   05
-                </H1>
-                <H3Box
+                </H3>
+                <H3
                   size="30px"
                   weight="600"
                   className="ml-3 mb-4"
@@ -263,7 +280,7 @@ const worth = () => {
                   }}
                 >
                   VISION AND CONTROL
-                </H3Box>
+                </H3>
               </Wrapper>
             </Wrapper>
           </Wrapper>

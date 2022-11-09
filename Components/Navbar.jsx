@@ -130,7 +130,7 @@ const Navbar = (props) => {
             ) : (
               <form className="form-inline my-2 my-lg-0 mr-4">
                 <button
-                  className="btn btn-success"
+                  className="btn btn-success nav_btn"
                   style={{ transform: "translate3d(0px, 0px, 0px)" }}
                   type="submit"
                 >

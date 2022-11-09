@@ -238,14 +238,15 @@ const index = () => {
           data-aos="fade-up"
           data-aos-duration="3000"
         >
-          <Wrapper className="row align-items-center home_res_margin">
+          <Wrapper className="row align-items-center res_center_content">
             {/* for desktop version line? */}
             <Wrapper className="col-md-1 mt-3 mb-5 show_line_home">
               <Wrapper className="vl" style={{ marginLeft: "31px" }}></Wrapper>
             </Wrapper>
             {/* for font written on home page */}
             <Wrapper className="col-md-8">
-              <H1 className="home_h1_res_size home_res_pad_top">
+              {/* to set the size and padding on responsiveness */}
+              <H1 className="home_res_h1_pad_top">
                 <Typed
                   strings={["A NEW APPROACH TO SPORTS GAMING"]}
                   typeSpeed={150}
@@ -254,12 +255,17 @@ const index = () => {
               </H1>
               {/* for paragraph written below h1 text */}
               <Wrapper className="row">
+                {/* for desktop version */}
                 <Wrapper className="col-md-8">
-                  <P className="home_p_res_size home_res_pad_bottom display_para_desk">
+                  <P className="home_res_pad_bottom display_para_desk">
                     Peer2Peer Sports Betting Meets Play2Earn Gaming Earn All The
                     Time. Every Time.
                   </P>
-                  <P className="display_para_res home_p_res_size home_res_pad_bottom">
+                  {/* for mobile version  */}
+                  <P
+                    size="18px"
+                    className="display_para_res home_res_pad_bottom"
+                  >
                     Peer2Peer Sports Betting Meets
                     <br /> Play2Earn Gaming
                     <br /> Earn All The Time. Every Time.
@@ -282,7 +288,7 @@ const index = () => {
             className={`bg-black`}
             gradient={false}
           >
-            <H2 className="marquee_text_res">
+            <H2>
               - TOURNAMENT -<span className="text-success">REWARDS</span>- GAMES
               -<span className="text-success"> BET TO WIN </span>- TOURNAMENT -
               <span className="text-success"> REWARDS </span>- GAMES -
@@ -341,7 +347,7 @@ const index = () => {
                             layout="responsive"
                           />
                         </Wrapper>
-                        {/* <Wrapper className="col-md-1"></Wrapper> */}
+
                         <Wrapper className="col-md-10 mt-3 mb-4">
                           <H4 className="ml-4">{val.desc}</H4>
                         </Wrapper>
@@ -379,7 +385,7 @@ const index = () => {
           className="container container-fluid mb-5"
           style={{ marginTop: "170px" }}
         >
-          <H1 className="home_h1_res_size">PLAYIN ECOSYSTEM</H1>
+          <H1>PLAYIN ECOSYSTEM</H1>
 
           <Wrapper className="row">
             <Wrapper className="col-md-6 mt-5">
@@ -405,14 +411,16 @@ const index = () => {
                           <Wrapper className="col-md-12 mt-4 mb-3">
                             <Wrapper className="d-flex">
                               <Wrapper className="col-md-10">
-                                <H3Box
+                                <H3
+                                  size="25px"
+                                  weight="300"
                                   color="white"
                                   style={{
                                     float: "left",
                                   }}
                                 >
                                   {val.title}
-                                </H3Box>
+                                </H3>
                               </Wrapper>
                               <Wrapper className="col-md-2">
                                 {show && index === showId ? (
@@ -453,9 +461,8 @@ const index = () => {
                           <Wrapper
                             key={index}
                             className="container container-fluid mt-3"
-                            // style={{ display: `${show ? "block" : "none"}` }}
                           >
-                            <P2 className="d-flex" color="#D6D5CB">
+                            <P size="22px" className="d-flex" color="#D6D5CB">
                               <StarIcon
                                 style={{
                                   width: "17px",
@@ -465,7 +472,7 @@ const index = () => {
                                 className="mr-2"
                               />
                               <ExpandFun html={val.content} />
-                            </P2>
+                            </P>
                           </Wrapper>
                         ) : (
                           ""
@@ -512,10 +519,7 @@ Collectibles."
                   height: "500px",
                 }}
               >
-                <H1
-                  className="home_h1_res_size"
-                  style={{ paddingTop: "100px", marginLeft: "120px" }}
-                >
+                <H1 style={{ paddingTop: "100px", marginLeft: "120px" }}>
                   $BETR GOVERNANCE TOKEN
                 </H1>
               </Wrapper>
@@ -608,10 +612,10 @@ Collectibles."
               <Wrapper className="col-md-3"></Wrapper>
             </Wrapper>
             <Wrapper className="row text-center">
-              <POrg className="mt-2">
+              <P size="16px" className="mt-2">
                 If you have already signed up then enter your email again to see
                 your standing in waitlist
-              </POrg>
+              </P>
             </Wrapper>
           </Wrapper>
         </Wrapper>

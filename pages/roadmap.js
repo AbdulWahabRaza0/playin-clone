@@ -4,7 +4,7 @@ import { RoadMapStyle, Wrapper, Ul, Li } from "../Components/styles";
 import { H1, HR, H3 } from "../Components/Typography";
 const roadmap = () => {
   const [mount, setMount] = useState(false);
-  const Box = () => {
+  const Box = (props) => {
     return (
       <>
         <Wrapper
@@ -17,16 +17,13 @@ const roadmap = () => {
           }}
         >
           <Wrapper className="d-flex" style={{ flexDirection: "column" }}>
-            <H1>01</H1>
+            <H1 size="76px">{props.number}</H1>
             <HR />
             <Wrapper
               classNme="ml-3"
               style={{
+                marginTop: `${props.flag ? "50px" : ""}`,
                 backgroundColor: "#332D2D",
-                // paddingLeft: "30px",
-                // paddingRight: "35px",
-                // paddingTop: "40px",
-                // paddingBottom: "35px",
               }}
             >
               <Wrapper className="ml-3 mt-4 mb-4 mr-5">
@@ -75,14 +72,14 @@ const roadmap = () => {
         >
           <Wrapper className="roadmap_scroll_box container container-fluid">
             <Wrapper className="d-flex" style={{ flexDirection: "row" }}>
-              <Box />
-              <Box />
-              <Box />
-              <Box />
-              <Box />
-              <Box />
-              <Box />
-              <Box />
+              <Box number="01" />
+              <Box flag={true} number="02" />
+              <Box number="03" />
+              <Box flag={true} number="04" />
+              <Box number="05" />
+              <Box flag={true} number="06" />
+              <Box number="07" />
+              <Box flag={true} number="08" />
             </Wrapper>
           </Wrapper>
         </Wrapper>
